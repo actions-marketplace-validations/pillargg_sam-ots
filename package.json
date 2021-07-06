@@ -1,0 +1,29 @@
+{
+  "name": "sam-ots",
+  "version": "0.0.0",
+  "description": "Serverless Application Model Output Testing Software",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pillargg/sam-ots.git"
+  },
+  "keywords": [
+    "aws"
+  ],
+  "author": "Pillar",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/pillargg/sam-ots/issues"
+  },
+  "homepage": "https://github.com/pillargg/sam-ots#readme",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0"
+  }
+}
