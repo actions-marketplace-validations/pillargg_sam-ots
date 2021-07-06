@@ -1,0 +1,6 @@
+{
+    "errorMessage": "'NoneType' object is not subscriptable",
+    "errorType": "TypeError",
+    "requestId": "1d66aec9-2f11-435c-8f08-c5c9915ca29e",
+    "stackTrace": ["  File \"/handler.py\", line 83, in handler\n    generate_thumbnails(str(video_id))\n", "  File \"/handler.py\", line 53, in generate_thumbnails\n    clip_data = get_clips_from_db(videoId)\n", "  File \"/handler.py\", line 42, in get_clips_from_db\n    video_timestamps = result['clips']['brain']\n"]
+}
