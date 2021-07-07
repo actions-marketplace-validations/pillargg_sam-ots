@@ -26,6 +26,10 @@ async function main() {
                 lastLine = lines.pop();
                 console.log(lastLine);
             }
+            if (lastLine.includes('REPORT')) {
+                console.log('No errors found, assuming success.');
+                return;
+            }
             console.log('Last line:' + lastLine);
             const data = JSON.parse(lastLine);
             Object.keys(data).forEach(key => {
