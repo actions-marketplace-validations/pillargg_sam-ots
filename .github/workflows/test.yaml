@@ -14,10 +14,13 @@ jobs:
         with:
           node-version: '12'
 
-      - name: Install Dependencies
-        run: npm i
-
       - name: Check Poller
         uses: ./
         with:
           file: ./logs/poller.txt
+
+      - name: Check
+        if: ${{ env.ACT }}
+        uses: ./
+        with:
+          file: ./logs/downloader.txt
