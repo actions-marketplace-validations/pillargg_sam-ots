@@ -1,0 +1,15 @@
+name: 'SAM-OTS'
+description: Serverless Application Model Output Testing Software
+branding:
+  icon: cloud
+  color: orange
+inputs:
+  file:
+    description: 'Log file to test'
+    required: true
+  test:
+    description: 'JSON to test against'
+    required: false
+runs: 
+  using: 'node12'
+  main: 'index.js'
