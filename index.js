@@ -10,6 +10,7 @@ const file = core.getInput('file');
 async function main() {
     try {
         const contents = await readFile(path.join(file), 'UTF-8');
+        console.log(contents);
         if (file.includes('json')) {
             const data = JSON.parse(contents);
             Object.keys(data).forEach(key => {
@@ -23,6 +24,7 @@ async function main() {
             let lastLine = '';
             while (lastLine === '') {
                 lastLine = lines.pop();
+                console.log(lastLine);
             }
             console.log('Last line:' + lastLine);
             const data = JSON.parse(lastLine);
