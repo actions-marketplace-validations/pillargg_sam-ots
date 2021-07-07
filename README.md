@@ -10,6 +10,10 @@ This software will test the output logs of a lambda ran via the SAM CLI so that 
 
 The initial version (which will be referred to as v0) will have the only goal of testing the output to make sure that there is no errors in the logs and will not test against other files. v1 will test against regular expression JSON files to make sure the output is as expected.
 
+## Usage
+
+See [`test.yml`](/.github/workflows/test.yaml).
+
 ## To Do
 
 - [x] Get an initial version up and running (Node or Python?)
