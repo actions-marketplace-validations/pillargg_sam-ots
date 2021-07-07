@@ -12,7 +12,7 @@ The initial version (which will be referred to as v0) will have the only goal of
 
 ## To Do
 
-- [ ] Get an initial version up and running (Node or Python?)
-- [ ] Get it working on GH Actions
-- [ ] Update it so that it can be ran with JSON Files
+- [x] Get an initial version up and running (Node or Python?)
+- [x] Get it working on GH Actions
+- [ ] Update it so that it can be ran with JSON file tests
 - [ ] Make it into a GitHub Action Marketplace step
