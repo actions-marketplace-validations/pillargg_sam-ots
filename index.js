@@ -21,6 +21,7 @@ async function main() {
         } else {
             const lines = contents.split('\n');
             const lastLine = lines.pop();
+            console.log('Last line:' + lastLine);
             const data = JSON.parse(lastLine);
             Object.keys(data).forEach(key => {
                 if (key.includes('errorMessage') || key.includes('errorType')) {
